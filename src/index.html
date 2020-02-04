@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WSD Odds</title>
+    <link rel="stylesheet" href="materialize.min.css">
+  </head>
+  <body class="center">
+    <p class="center">
+      low risk & reward ↔ high risk & reward
+    </p>
+    <input type="range" min=0 max=999 id="slider">
+    <br>
+    <button class="btn-large" id="play-button">Play</button>
+    <p id="game-texts">
+      Points: <span id="point-span"></span>
+      <br>
+      Game status: <span id="status-span"></span>
+      <br>
+      Factor: <span id="factor-span"></span>
+      <br>
+      Probability: <span id="probability-span"></span>
+      <br>
+      Points if lucky: <span id="lucky-points"></span>
+    </p>
+    <button class="btn" id="reset-button">Reset game</button>
+    <br>
+    <br>
+    <button class="btn" id="save-button">Save</button>
+    <button class="btn" id="load-button">Load</button>
+    <button class="btn" id="submit-button">Submit score</button>
+    <script type="text/javascript" src="wsd-odds.js"></script>
+  </body>
+</html>
