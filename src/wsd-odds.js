@@ -119,6 +119,8 @@ resetGame();
 
 render();
 toService("SETTING", {
-  width: 300,
-  height: 300,
+  options: {
+    width: 350,
+    height: 400,
+  }
 });
